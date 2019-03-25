@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.ext.compile_sdk_version
+
+    defaultConfig {
+        minSdkVersion project.ext.min_sdk_version
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled false
+    }
+   buildTypes {
+        debug{
+        }
+        release{
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+}

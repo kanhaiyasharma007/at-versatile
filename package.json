@@ -1,0 +1,39 @@
+{
+  "name": "AirtelCommons",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "reload": "sh ./sync-package.sh",
+    "watch": "npm-watch",
+    "reverse-port": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse --list"
+  },
+  "watch": {
+    "reload": {
+      "patterns": [
+        "index.js",
+        "src"
+      ],
+      "extensions": [
+        "js",
+        "json"
+      ]
+    }
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.1",
+    "reduce": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.0",
+    "@babel/runtime": "7.4.2",
+    "babel-jest": "24.5.0",
+    "jest": "24.5.0",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.8.3",
+    "npm-watch": "^0.1.9"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
