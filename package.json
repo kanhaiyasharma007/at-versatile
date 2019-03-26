@@ -20,8 +20,8 @@
     }
   },
   "dependencies": {
-    "react": "16.8.3",
-    "react-native": "0.59.1",
+    "react": "16.2.0",
+    "react-native": "0.54.0",
     "reduce": "^1.0.1"
   },
   "devDependencies": {
